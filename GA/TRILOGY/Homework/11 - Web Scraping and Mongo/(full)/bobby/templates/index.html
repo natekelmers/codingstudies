@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission to Mars</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        .dataframe table {
+            border-collapse: collapse;
+            background-color:#FFFFFF;
+            text-overflow: ellipsis;
+            border-spacing: 0;
+            width: 100%;
+            padding: 2px;
+            border: 1px solid rgb(35, 57, 78);
+            }
+
+        .dataframe td {
+            text-align: left;
+            padding: 2px;
+            }
+
+        .dataframe th {
+            text-align: left;
+            text-overflow: ellipsis;
+            width: auto;
+            font-weight: bold;
+            padding: 1px;
+            background-color: #e6e6e6;
+            }
+
+        .dataframe tr:nth-child(even){
+            background-color: #F1F1F1;
+            }
+
+        .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+            background-color: #cce6ff;
+            text-overflow: ellipsis;
+            box-shadow: 3px 3px 5px grey;
+            }
+
+        jumbotron {
+            color: rgb(0, 52, 148);
+            background: lightgray;
+            width: 100%;
+            height: 100%;
+            padding: 25px;
+            text-align: center;
+            margin: 15px;
+            border-radius: 15px 50px;
+            }
+
+        #button {
+            color: #fff;
+            font-weight: bold;
+            font-size: 22px;
+            background-color: #00315c;
+            border-color: #1391ff;
+            border-radius: 5px 10px;
+            }
+
+        #weather-box {
+            border-style: solid;
+            border-width: 2px;
+            border-color: #00315c;
+            background: rgb(255, 157, 157);
+            color: black;
+            margin-bottom: 10px;
+            padding: 10px;
+            margin-right: 3px;
+            margin-top: 5px;
+            }
+
+        #mars-data {
+            padding: 10px 10px 10px 10px;
+            width: 100%;
+            height: 100%;
+            border: 1px solid teal;
+            border-radius: 50px 10px;
+            }
+
+        h1 {
+            font-family: 'Tajawal', sans-serif;
+            font-size: 30px;
+            font-weight: bolder;
+            text-align: center;
+            }
+
+        h2 {
+            font-family: 'Tajawal', sans-serif;
+            font-size: 26px;
+            font-weight: bold;
+            }
+
+        h3 {
+            font-family: 'Tajawal', sans-serif;
+            font-weight: bold;
+            color: black;
+            font-size: 24px;
+            text-align: center;
+            }
+
+        h4 {
+            font-family: 'Tajawal', sans-serif;
+            font-weight: bold;
+            color: rgb(0, 107, 168);
+            font-size: 20px;
+            text-align: left;
+            }
+
+        @media ( min-width: 1200px) {
+            .row.row-grid [class*="col-lg-"]+[class*="col-lg-"] {
+                margin-top: 0;
+                }
+            }
+
+        @media ( min-width: 992px) {
+            .row.row-grid [class*="col-md-"]+[class*="col-md-"] {
+                margin-top: 0;
+                }
+            }
+
+        @media ( min-width: 768px) {
+            .row.row-grid [class*="col-sm-"]+[class*="col-sm-"] {
+                margin-top: 0;
+                }
+            }
+
+        @media ( min-width: 768px) {
+            .row.row-grid [class*="col-xs-"]+[class*="col-xs-"] {
+                margin-top: 0;
+                }
+            }
+    </style>
+
+</head>
+
+<body style="background-color: white">
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Mission to Mars</h1>
+            <p>
+                <center><a id="button" class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape News Mars Data</a></center>
+            </p>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Latest Mars News</h2>
+                    <h4> {{ mars_data["latest_news"]["title"] }}</h4>
+                    <p> {{ mars_data["latest_news"]["paragraph"] }} </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8">
+                    <h2>Featured Mars Image</h2>
+                    <img src="{{ mars_data.featured_image }}" class="img-fluid" style="max-width: 100%; border-radius: 50px 10px;">
+                </div>
+                <div class="col-md-4">
+                    <div class="weather-box">
+                        <h4> Current Weather on Mars</h4>
+                        <p> {{mars_data.weather}} </p>
+                    </div>
+                    <div class="table-box">
+                        <h4> Mars Facts</h4>
+                        {{mars_data.facts|safe}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <center>
+            <div class="jumbotron">
+                <div class="container">
+                    <h2 align="center">Mars Hemispheres</h2>
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-5">
+                            <a href="{{ mars_data["hemispheres"]["Cerberus Hemisphere"] }}" target="_blank">
+                                <img class="img img-responsive" id="mars-data" src="{{ mars_data["hemispheres"]["Cerberus Hemisphere"] }}" alt="Cerberus Hemisphere" style="max-width: 45%; border-radius: 15px 50px;">
+                                <h3>Cerberus Hemisphere</h3>
+                            </a>
+                        </div>
+                        <div class="col-md-5">
+                            <a href="{{ mars_data["hemispheres"]["Schiaparelli Hemisphere"] }}" target="_blank">
+                                <img class="img img-responsive" id="mars-data" src="{{ mars_data["hemispheres"]["Schiaparelli Hemisphere"] }}" alt="Schiaparelli Hemisphere" style="max-width: 45%; border-radius: 15px 50px;">
+                                <h3>Schiaparelli Hemispher</h3>
+                            </a>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-5">
+                            <a href="{{ mars_data["hemispheres"]["Syrtis Major Hemisphere"] }}" target="_blank">
+                                <img class="img img-responsive" id="mars-data" src="{{ mars_data["hemispheres"]["Syrtis Major Hemisphere"] }}" alt="Syrtis Major Hemisphere" style="max-width: 45%; border-radius: 15px 50px;">
+                                <h3>Syrtis Major Hemisphere</h3>
+                            </a>
+                        </div>
+                        <div class="col-md-5">
+                            <a href="{{ mars_data["hemispheres"]["Valles Marineris Hemisphere"] }}" target="_blank">
+                                <img class="img img-responsive" id="mars-data" src="{{ mars_data["hemispheres"]["Valles Marineris Hemisphere"] }}" alt="Valles Marineris Hemisphere" style="max-width: 45%; border-radius: 15px 50px;">
+                                <h3>Valles Marineris Hemisphere</h3>
+                            </a>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+            </div>
+        </center>
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

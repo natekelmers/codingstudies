@@ -1,0 +1,5 @@
+Pt 1
+
+Looks pretty good overall. I did notice that it looks like your code missed the 'news_title' variable when finding the news article and paragraph. I bet using a similar technique as you did to create the dictionary of hemispheres (using BeautifulSoup to search tags) would've worked. Everything looks good other than that.
+
+Pt 2

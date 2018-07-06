@@ -1,0 +1,7 @@
+Pt 1
+
+Nice work. Couple suggestions:
+
+- Be careful leaving your soup objects printed in the notebook. The length of the text will make the notebook difficult for others to navigate, and occasionally, prevent browsers from loading the notebook via GitHub.
+- It looks like you had trouble getting your featured Mars image url. You had the right idea, but needed to use "[]" instead of "()" to grab the url data from a tag.
+- 

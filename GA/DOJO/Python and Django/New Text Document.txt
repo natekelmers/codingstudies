@@ -1,0 +1,51 @@
+MYSQL/DATABASE DESIGN
+
+- social media is driven by databases (creating, manipulating, saving data)
+- html and css make up the view of a page, logic dictates functionality, and the database stores the data
+- main principle in database design is "don't repeat data" (minimize repetition)
+
+ERD
+
+- "entity relationship diagram", or, a visual blueprint for how the database will look and behave
+- an ERD is the map/structure of how to store the data, SQL is the language for manipulating the data
+
+I WILL LEARN:
+
+- How to create an ERD
+- How to approach modeling data to best fit my purpose (application)
+- Learn proper normalization techniques
+
+
+
+DATABASE DESIGN AT A HIGH LEVEL
+
+- basically, don't repeat data
+- basic relationships: one-to-one, one-to-many, many-to-many
+- there are 3 forms of normalization
+- i will learn the mysql workbench
+- i will be mindful of data types
+- i will create customized tables depending on task at hand using sql
+
+
+ONE TO ONE
+
+- one item to one other item (one foreign key to one id on another table, for example; one credit card to one custommer)
+
+ONE TO MANY
+
+- one item to many other items (one customer has many orders, one order has one customer; one post has many comments, but a comment belongs to one post; etc)
+
+MANY TO MANY
+
+- many items can belong to many items (one order has many items, one item can be in many orders)
+- generally, we will create a connector table (avoid duplicates in this table though)
+
+
+
+NORMALIZATION
+
+- conventions of database design to make the database as concise and non-repetitive as possible
+
+- form 1 - each column should only have one value ("address" should be split into "address_street", "address_state", "address_zip")
+- form 2 - each column that is not a key (either primary or foreign) should have unique values (not necessarily including integers, like year)
+- form 3 - 

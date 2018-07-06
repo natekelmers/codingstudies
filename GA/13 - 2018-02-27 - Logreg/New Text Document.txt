@@ -1,0 +1,17 @@
+- microsoft's wallpaper feature (that randomizes nice pretty photos)
+- includes a "like what you see? thanks for sending us feedback. we'll use it to improve this feature in the (not too distant) future"
+
+- in terms of a data science feature, how should we look at this to optimize the feature?
+
+- picks images to show you randomly, ideally wants to show you only the good ones
+
+- false positive = "showed me an image, i didn't click 'like'"
+- true positive = "showed me an image, i did click 'like'"
+
+---
+
+- if our data is only filled with 0s ("dislike") and 1s ("like"), how do we classify?
+- can't use a strict linear regression
+- instead, bind (-infinity, infinity) to (0, 1), create a sigmoid curve
+- allows for both a prediction and a confidence for each prediction
+

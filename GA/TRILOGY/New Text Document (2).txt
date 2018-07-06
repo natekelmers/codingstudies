@@ -1,0 +1,11 @@
+- in javascript, what's the difference between a == and ===
+
+- var vegetables = ["lettuce", "tomato", "onion"]
+
+
+
+
+- hour long call on zoom, will have a mock student/teacher situation (trying to help with code)
+- google console, utilize google, w3, stackoverflow
+
+- help them figure it out rather than just answer the question

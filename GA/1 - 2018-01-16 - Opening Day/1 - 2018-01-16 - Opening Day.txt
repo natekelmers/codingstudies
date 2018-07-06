@@ -1,0 +1,236 @@
+Mission statement: General assembly is a global community of individuals empowered to pursue the work we love
+
+---
+
+David:
+240-601-7856
+david.allison@generalassemb.ly
+- Worked at UMD as theater technician and instructor, took next step with GA, so he knows about career changing stuff
+
+Alex Sherman:
+
+
+- senior instructor, been with GA for 3 years, data scientist at Deloitte, NLP for document classification (fund/not fund)
+- writing a book on customer analytics
+
+Joe Klein:
+
+
+- Took data science immersive and was a TA/instructor, TAing this as a night class
+
+---
+
+Class Overview:
+
+To get a letter of completion:
+- 80% of the homework
+- miss no more than 3 (or 4-5) classes (let David know you'll miss class before you miss class)
+- complete final project
+
+Please finish the feedback/surveys (including the exit tickets at the end of each class, and the detailed surveys)
+
+Course lasts from Jan 16th to March 22nd (t and th)
+
+---
+
+What does success look like?
+
+Homework + Attendance + Final Project + "Community Engagement"
+* get to know other people/things going on on campus
+
+Use the office hours!
+
+---
+
+Future events include:
+
+First fridays (to meet employers and people in the community)
+
+Women in tech breakfast (1/19)
+
+"backtoschooldc" gets you 30% off
+
+Consider your learning curve will go from "uninformed optimism" > "informed pessimism" > "'either determined or giving up'" > "hopeful realism" > "INFORMED optimism"
+
+---
+
+Kenan
+- fav vacation spot: patagonia, chile
+- why class: wants to analyze large data better and learn to self-study (feels good about expectations)
+
+Jessie
+- fav vacation spot: scuba diving in 2007
+- why class: want to transition from ____ analyst to ____ analyst
+
+Toby
+- fav spot: vietnam (where he grew up!)
+- why class: works for a consulting firm now, co-workers recommended it, want to learn 
+
+Jamie
+- fav spot: machu pichu
+- why class: (not a great coder yet, but will get there, works with extremely noisy data at work, likes data viz)
+- lives in arlington! (george mason/wilson area)
+
+Carmela
+- fav spot: australia (sydney), just got back
+- why class: analyze data at work but it's all historical, want to learn predictive, want to understand what she doesn't know
+- uses a lot of sql in her day-to-day (knows some tableau)
+- lives in arlington! (courthouse area)
+
+Jingyu
+- fav spot: tokyo, japan (3 years ago), liked the pokemon center
+- why class: want to learn python pretty bad and to learn data predictions
+
+Christine
+- fav spot: hawaii
+- why class: business analyst for 8-9 years and want to learn skills she's interested in
+
+Ian
+- fav spot: lake tahoe california
+- why class: get better at data analysis
+
+F
+- fav spot: south beach of miami (go almost every year!)
+- why class: work at tech firm and do signal analysis (tell telecom companies where the interference comes from), want to move from operations to analysis
+
+Hameto
+- fav spot: mexico city (just got back)
+- why class: do sql at work and want to level up python skills
+
+Christina
+- fav spot: iceland
+- why class: just moved from chicago, need to transition from r to python to get a job here!
+
+Jess
+- fav spot: road trip to montana
+- why class: do data analysis at job now but it's elementary, want to scrape the web and analyze big datasets
+
+Anthony
+- fav spot: costa rica
+- why class: reinforce what i already know and learn new aspects of data science at current job
+
+Ani
+- fav spot: rio, brazil
+- why class: used to be data analyst and want to get past that
+
+Sonja
+- fav spot: fiji
+- why class: current work with lots of data and text
+
+
+
+---
+
+WELCOME TO DATA SCIENCE
+
+(fyi, most of this class is hands-on coding, this is only 1 of 2 decks)
+
+"What is data science"
+- set of tools/techniques for data
+- interdisciplinary problem solving
+- application of scientific techniques to practical problems
+- somewhere in between "computer science" (incl hacky skillsets), "math and statistics", "subject matter expertise"
+- data science is no longer the same as just a big data engineer, for example product analysts (examine products, a/b models, etc etc), for example not just ph.d's doing crazy stuff
+
+On Amazon...
+- Look up the book "Python for Data Anlysis: Data Wrangling with Pandas, NumPy, and IPython" (Wes McKinney)... how the heck did Amazon figure out how to recommend that book to Alex? How to predict the best price to maximize revenue? How do we fill up "Customers who bought this item also bought", "Sponsored products related to this item"
+- "What information is needed to make a decision? What is useful? How to I find it? How do I show it?" (!!!)
+- Build models in python to answer questions like these
+- "Which review do I show for 'top customer reviews'? What reviews are important to which people? How do we prevent astroturfed reviews?
+
+Who uses data science?
+- Netflix figures out which images hook viewers on new shows? They show lots of pictures to show to different users. Which images help click-through rates? (images that show characters, but only one or two and not all, tend to work)
+- Self-driving cars
+- Generally, A.I. tries to do: perception, understanding, prediction, planning (what happened, what does that mean, what happens next, wat do) *note that "what does that mean" is something humans are good at but A.I. is not so good at yet
+
+Data science roles...
+- some data viz, some machine learning, some math, some stats, some comp sci, some communication, some domain expertise (eliciting feedback from clients, for example)
+- each data scientist is good at a few of these, good at others
+- deloitte has a starfish model to build teams for example
+- also, for ex: data developer: dev, engineer / data researcher: researcher, scientist, statistician / data creative: jack of all trades, artist, hacker / data business person: leader, business person, entrepeneur
+- almost all roles involve some parts of each skillset, but maybe more than others
+- BI analyst vs data scientist (applied statistician) vs data/computer engineer skillsets (define problem vs solve it with the data vs put it into production)
+- software engineer thinking (build a set of rules) vs data scientist thinking (build models)
+
+Data science workflow...
+- Similar to the scientific method...
+
+1) identify problem
+2) acquire the data
+3) parse the data
+4) mine the data
+5) refine the data
+6) build the model
+7) present the results
+
+- this class is focused on building the model, but we will talk about the edge points generally...
+
+- identify: identify business/product objectives, hypothesize goals and criteria for success, create questions for identifying dataset
+- bryan eisenberg was famous for a/b testing on websites, amazon's original page looked like craigslist, every revenue page looked a little different, and the movie page got way less revenue than normal...
+- bryan eisenberg discovered there's roughly 4 different consumer profiles/personas...
+- people that look at just pictures basically see the page and go "no thanks" ("this is an informational page about movies"), so changing the page to lots of pictures dramatically increased revenue the very next day (like $a million/day)
+- another example: what should the color of a link to be? which of 42 shades of blue should the google blue be? (google's creative director quit over that, not a high-value problem)
+- identifying means categorizing problems by UNCERTAINTY and VALUE of problems
+
+- acquire: identify "right" data set(s), import data and set up local/remove data structures, determine appropriate tools
+- where/how did the data come from? can i trust it?
+- for example, alex booked the cataracts vs major lazer at a school concert because it's a cheap band with a bajillion followers on everywhere, but didn't break even...
+- google insights would've told you that all the followers are on the west coast and not the east coast!
+- a year ago, alex built a classification model with two analysts without a training dataset, so they had to make all their yes/no decisions themselves, but they didn't see the problem the same way at all (a1 says "fund because of this", a2 says "don't fund because of this")
+
+- parse: read documentation provided with data, perform exploratory analysis, VERIFY the quality of the data
+- for example, trying to learn about meals in south korea, lunch time meals drastically decreasing, turns out the survey changed wording from "how many times have you had a meal between __ and __" vs "how many times have you had lunch this week", and in korea, the definition of meal is very specific ("i ate food but it also had rice", so they were eating snacks instead of meals)
+- also for example, south korean insurance agency found that 60% of the people in south korea are farmers, according to their forms, but generally, the forms were filled out by the insurance agent (who was just trying to sell the insurance)
+
+- mine: determine sampling methodology and sample data, format, clean, slice and combine data, create a derived formula
+
+- refine: (comprehend)
+
+- build: select model, build model, evaluate and refine model (we will generally work in "scikitlearn" ("sklearn") and "pandas" library in python, he teaches through jupyter notebooks)
+
+- present:
+
+- in alex's point of views: "what can we optimize" and "is it valuable"
+
+- a great find by google: they track how your mouse moves on a webpage, humans and bots move very different, so they don't need capchas anymore, improved the UX by being able to ignore that
+
+- insight into facebook: how to build models to suggest clicks over time (what type of consumer or clicker is this guy? what does he want to know about right now? recommended vacation spots > did he take his vacation yet?)
+
+---
+
+Get yourself access to http://github.com/ga-students/ds-dc-25, see the class schedules (including the homeworks!)
+
+---
+
+How Alex uses Slack:
+
+#general: alex's "announcements" channel (don't post here)
+#resources: anybody can put anything in here
+#github: post your github account here to get access to github
+
+---
+
+Takeaways from the music clustering exercise:
+
+Objective: build community of data scientists
+- "Did we ask the right question"
+- "How can we evaluate"
+
+Not all definitions of the "objective" lead to the same "how can we evalute"
+
+- If we're gonna measure chatter, then maybe this is a great question
+- If we're gonna measure job referrals, maybe we would've rather asked some other questions
+
+*note that some methods of evaluation will affect the quality of the data (for example, showing the results on the board will create conformity in the discussion)
+
+---
+
+FIVETHIRTYEIGHT EXERCISE
+
+- in Spyder, it only runs if you highlight it (so it's great to run small pieces of code, or get answers for little things like "type(var)" real quick
+
+- also, the "dir()" command will tell you "what are all the commands i can do with that"
+
+- the "Learn Python the Hard Way" book is useful
+
+- note that these things don't teach you how to use the code, but it will teach you syntax

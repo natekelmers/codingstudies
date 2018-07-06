@@ -1,0 +1,82 @@
+Conceptual definitions of bias and error:
+
+- error due to bias: "difference between expected (or maybe average) prediction of the model and the correct value of whatever we wanted to predict.
+- bias measures how far off in general the models' predictions are from the correct value
+
+- error due to variance: "variability of a model prediction for a given data point"
+- variance represents how much the predictions for a given point vary between different models
+
+- (it's kind of like bias = validity and variance = reliability in psychology research)
+
+---
+
+Mathematical definitions:
+
+- Err(x) = bias^2 + variance + irreducible error ("noise")
+
+- With a true model and infinite data, bias and variance can approach zero
+- With real (imperfect) models and finite data, there will be a tradeoff between minimizing bias and variance
+
+---
+
+Example: voting intentions
+
+- call 50 random people from phone book, 13 repubs, 16 dems, 21 don't respond...
+- but in real life, dems lose...
+
+- source of bias 1: using a phone book to sample
+- source of bias 2: not following up with non-respondents (who may behave differently than first responders)
+- source of bias 3: not weighting responses by likelihood of voting
+
+- source of variance 1: small sample size
+
+- solving one problem does not necessarily solve the other problems
+- more samples with a bad design decreases variance (spread) but increases bias (fundamental inaccuracy)
+- thus, reducing total error requires considering both forms of error
+
+---
+
+Example: voter party registration
+
+- Let's pretend we're trying to predict voter registration on wealth and religiousness...
+
+- Logistic regressions often used for binary data
+- But, if there might be some non-linearity in th erelationship, more adaptive approaches are better
+
+- k-Nearest Neighbors, plots on a plane, and the distance to the neighbors will be measured
+- k = number of neighbors considered to create the measure
+- Increasing k means more voters per preiction
+- Higher k means smoother prediction curves, but can make category borders blurry
+- Small k islands and jaggedness are signs of variance
+- High k blurry lines is a sign of bias
+- Thus, increasing k decreases variances but increases bias
+
+---
+
+Managing bias and variance
+
+- Bias and variance are generally equally important to each other, one should not be improved at the excessive expense of the other
+
+- Bagging (bootstrap aggregating), or, replicating the original dataset and replace some random selection, can reduce variance
+- Then, when making a prediction, all of the models in the ensemble are polled, results are averaged
+
+- Random forests, or, training numerous decision trees based on repeated resampling of the original, works well too
+- The bias of the full model equals the bias of a single decision tree, while variance decreases
+
+- "Asymptotic consistency" and "asymptotic efficiency" mean, as training sample size grows to infinity, model's bias falls to zero and variance decreases to "as low as any other model" (respectively)
+- This obviously can't happen
+- Sometimes, models tuned for high sample sizes do worse than models not so
+- Accuracy (or other measures of effectiveness) should be prioritized
+
+- As a model's complexity is increased, bias is reduced but variance is increased
+- "Over-fitting" is "too complicated", "under-fitting" is "not complicated enough"
+- No good analytical way to find this balance, use trial and error
+- Generally, some sort of resampling measure (cross-validation, for example) is better than any theoretical measure
+
+---
+
+Footnotes
+
+- "The Elements of Statistical Learning" is really good (the pdf is out there)
+- Computational complexity != model complexity (higher k roughly decreases model complexity)
+- Complexity can actually increase bias if the algorithms have unusual, non-linear optimizations (some local minima/maxima, that is)

@@ -1,0 +1,103 @@
+img{
+ max-width: 100%;
+ max-height: audo;
+}
+.wrapper{
+ background-color: #6f5964;
+ width: 980px;
+ height: 1030px;
+}
+.header{
+ background-color: #f7f7f7;
+ padding: 10px;
+}
+.contentabout{
+ height: 263px;
+ padding: 25px;
+}
+#headername{
+ font-family: "Comic Sans MS";
+ font-size: 24pt;
+ font-weight: bold;
+ padding: 10px;
+ display: inline-block;
+}
+#headertitle{
+ font-family: Arial;
+ font-size: 16pt;
+ font-weight: bold;
+ padding: 10px;
+ display: inline-block;
+}
+#aboutpic{
+ width: 400px;
+ height: 263px;
+ background-color: #f7f7f7;
+ display: inline-block;
+}
+#aboutblurbwrapper{
+ width: 500px;
+ height: 263px;
+ background-color: #f7f7f7;
+ display: inline-block; 
+ vertical-align: top;
+ margin-left: 25px;
+}
+#blurbheader{
+ font-family: Arial;
+ font-size: 16pt;
+ font-weight: bold;
+ padding: 10px;
+ background-color: #878693;
+ color: white;
+}
+#aboutblurbtext{
+ font-family: Arial;
+ padding: 10px;
+}
+#contentblurb{
+ width: 290px;
+ height: 600px;
+ background-color: #f7f7f7;
+ display: inline-block;
+ margin-left: 25px;
+ vertical-align: top;
+}
+#contentblurbtext{
+ padding: 10px;
+ font-family: Arial;
+ font-size: 11pt;
+}
+#blurbbottom{
+ display: flex;
+}
+#blurbtechs{
+ display: flex;
+ flex-wrap: wrap;
+ padding: 10px;
+}
+#blurblink{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+#blurbbutton{
+ height: 25px;
+ border: solid 1px;
+ border-color: black;
+ border-radius: 5px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: #407d61;
+ color: white;
+ font-family: Arial;
+ font-size: 10pt;
+ font-weight: bold;
+}
+#imgbutton{
+ width: 40px;
+ height: 40px;
+ margin-right: 10px;
+ margin-bottom: 10px;
+}

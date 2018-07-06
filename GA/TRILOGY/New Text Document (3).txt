@@ -1,0 +1,51 @@
+1-on-1s:
+
+- what are we trying to accomplish?
+
+- what have we done so far?
+- (talk me through your code)
+- what might we be missing here?
+- (create a "fill-in-the-blank" problem)
+
+- so, what should we try to do next?
+- (get them pseudocoding, write the thoughts out)
+- (how is this going to work?)
+- (what's going on in this line?)
+- (use previous code as a best practice)
+
+- complement a lot
+- have them explain a lot
+- have tools open (console for javascript, elements for html/css, terminal for servers)
+- use google (but be nice about it and help them)
+
+- do you think this is going to work?
+
+- keep them on track ('utf-8' example)
+
+Dylan's tips:
+
+- take student to google (they'll need it!)
+- help them out if it's pretty dense (a dense stack overflow answer or python docs)
+- help them get from place to place, go step by step, don't skip steps
+- google the error message, for example
+
+- be positive and encouraging
+- be empathetic, try to relate to the students
+
+- try to have some fun with the experience (joy is the feeling we feel as we strive to our potential)
+
+- we're going to use sublime and git bash today
+
+Today's scenario:
+
+- today, we're in the 5th/6th week of the class
+- we're interacting with a csv file, interacting with an open weather map api, making requests
+
+
+
+
+
+
+---
+
+- 

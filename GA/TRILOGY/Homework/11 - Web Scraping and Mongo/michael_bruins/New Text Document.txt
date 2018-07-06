@@ -1,0 +1,6 @@
+Pt 1
+
+Mike, good work overall. It looks like you didn't get all the way through the last part (creating a dictionary of links and titles). Since the titles come from a similar place as the links, I'd recommend creating the titles in the same loop. Or, you can create the titles with similar code as you did to create the links, and then use "dict()" and "zip()" to easily the dictionary (maybe something like "dict(zip(titles, links))").
+
+Pt 2
+

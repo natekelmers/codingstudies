@@ -1,0 +1,61 @@
+THE QUESTION
+
+- I'm really interested in personality theory (I actually interviewed my entire high school class and had them take personality tests for a science fair project)
+
+- I've heard a lot about how your facebook posts/likes/tweets/whatever can predict your personality at a predictive level (big 5) to a surprisingly "good" degree
+
+- What about music?
+
+- I've noticed over time for example Soundcloud has the best market advantage but the worst advertising
+- Business problem: better ads on music services (youtube, spotify, soundcloud)
+
+
+THE DATASET
+
+- Personalitycafe (Myers-Briggs specific message forum)
+- "What song are you listening to now?" thread
+
+- Lots and lots of Selenium and BeautifulSoup code to scrape the thread page-by-page, extract the personality type and message (which may contain either a message, song title, or embedded Youtube video)
+
+- Use Youtube Data API to translate youtube ids to titles, lots of regex to turn these into actual titles for actual songs
+
+- Selenium once more to get artist/song titles (would rather use an API, took me down to 11k rows)
+
+CHALLENGES
+
+- writing the code was fairly difficult (I have no programming background and I was a psychology major in school, I'm basically starting from scratch here, this is my first serious exposure to any coding language, I previously tried Codeacademy and gave up on the battleship exercise)
+- wish i had known about "to_pickle"
+- in terms of run-time, took a week to scrape the thread, one "day" to get the song titles, 4 days to get the lyrics
+
+RESULTS
+
+- MultinomialNB (hyperparameters to avoid overfitting): 52%
+- Actually pretty good considering
+- very next on the to-do list is build a pipeline for this thing
+
+SEE VOCABULARY
+
+- min_df avoids overfitting ("Pumped Up Kicks" by "Foster The People" has an 85% chance of being an introvert?)
+
+SEE FALSE POSITIVES/NEGATIVES
+
+- Linkin Park "Pushing Me Away", Jimmy Eat World "Bleed American" are definitely not "extroverted" songs
+- Spice Girls "Wannabe", Def Leppard "Rocket", Daft Punk "One More Time"
+
+OTHER FEATURES
+
+- stronger weights to certain words (the forwards/backwords/stepwise method of selecting features?)
+- parts of speech? (previous kaggle competition on a personality dataset found introverts use more nouns, extroverts use more verbs when they write)
+- extroverts tend to like more cheerful, faster, more melodic music than introverts
+- sentiment analysis
+- complexity of vocabulary in lyrics, etc (would definitely need to control for genre)
+- would like to re-collect the data to preserve line breaks so i could analyze the compositional complexity of songs
+
+NOT FEATURES, BUT THINGS I WANT TO DO
+
+- re-gather data with different encoding (probably lost a lot of music from other languages, or songs by "bjork" for example)
+- align other dataset to get metadata (see next steps)
+- the personality site also includes lots of demographic info (age, gender, other personality types)
+- other threads of interest: "what are you thinking about" with 70k replies
+- how can i extract other big-five features? (use user's post history to estimate neuroticism? does J/P correlate with openness/conscientiousness/agreeableness?)
+- bokeh, plotly

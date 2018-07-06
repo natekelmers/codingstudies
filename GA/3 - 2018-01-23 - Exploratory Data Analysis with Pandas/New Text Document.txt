@@ -1,0 +1,80 @@
+Fyi: pandas = panel datas
+
+Again: homeworks are due 1 week after they're assigned
+(so, next class, do the command line exercise)
+
+When submitting homework use the "homework submission form", which includes name, homeworkk url, and optional message field
+
+---
+
+On data:
+
+- Dataframes are frequently row and column based (extract everything in this column or row-by-row)
+- Python is lenient ("extract everything but skip stuff that looks like this...") but not optimized (not that fast)
+- So, we use "numpy", which is based off of C, which is optimized for speed (can do looots of rows very quick)
+
+- "Method" is a word that basically means "pre-defined functions"
+
+- Note, you can do git bash stuff in the spyder console
+
+Working in pandas (using "1_lessons\Lesson03...\code\starter-code\pandas.py")
+
+- General: don't need to memorize this, but know it well enough to use it as a reference
+
+- import pandas as pd # this is common syntax and lets you type a little faster
+- pd.<text/tab> # this gives you a list of stuff to do
+
+- Pandas documentation is pretty solid, pandas.pydata.org will tell you a lot, youtube videos and what not are out there too
+- For example...
+- pandas.read_table is generally meant to import large amounts of data and handle every edge case you can think of with the data
+- See the nuts and bolts here: https://pandas.pydata.org/pandas-docs/stable/generated/pandas.read_table.html
+- Note, an "=" means this is an optional parameter, and these come after all the regular parameters
+
+- When reading files froom local computer or from a url, make sure to browse to the file with the "browse a working directory" (top right)
+
+- For the "# read 'u.user' into 'users'" line...
+- F9 the "users = pd.read_table(user_data_path, sep='|')" line...
+- Type "users" into the console (bottom right), shows 943 rows x 5 columns of data with an index at the far left (with no header)
+- Note that "read_table" will also expect the first row to be a header
+
+- See the notebook for other things you can type
+- Reading ".dtypes" on the path sometimes gets strings as integers (for like zip-codes or user ids)
+- "users.values" will get you an underlying numpy array (puts your data into a list of lists, call a row by going _.values[#][#])
+- There are some crazy ones that can quickly describe the data...
+- "users.describe()" will describe all numeric columns...
+- "users.age.mean()" will get the mean of the "age" column of data (note that operations can be chained!)
+- See the notebook for SQL-type filtering with one or more conditions
+
+- Note, the "()" generally means "an action needs to occur" (look up "object oriented programming")
+- Note, tuples cannot be changed ("immutable") and are shown in parenthesis
+
+- Putting a "?" in front of a command (like "?users.sort_values") will give you a little bit of documentation
+
+- If you're in "()" or "{}", you can use as many lines as you like to get your code done
+
+- In the "logical filtering" section, Alex noted, "this is similar to sql where you 'select users less than 20', I prefer pandas..."
+
+- "PEP 8" is Python's style guide to write readable/reviewable code and will also help me read other people's code easily
+
+- Consider always creating conditions so that you can re-read your code easily tomorrow!
+
+- For renaming one or more columns...
+- If you need to rename a dataset with say 1000 columns, you can use a list comprehension
+- Like, "columns = []", "col.replace("", "_") for col in columns"
+- See the next part of the exercise for how to replace the column names (for example, "drink_cols = []", "drinks.columns = drink_cols")
+
+- See how to add a new column as a function of existing columns ("drinks["servings"] = drinks.beer + drinks.spirit + drinks.wine")
+- It's like excel in spyder, very handy!
+
+
+
+---
+
+Homework:
+
+- Browse through the "pandas.py" notebook so we can get familiar with any cleansing syntax (especially the "Handling Missing Values")
+- 
+
+---
+
+Best practice = use configuration file to ensure compatibility when you send the code to someone else

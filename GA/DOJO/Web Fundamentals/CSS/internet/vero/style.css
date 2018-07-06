@@ -1,0 +1,192 @@
+* {
+	padding: 0;
+	margin: 0;
+    border: 0;
+}
+
+body {
+    width: 1300px;
+}
+
+img {
+    height: 100px;
+    display: inline-block;
+    position: relative;
+    left: 10px;
+    top: 15px;
+    
+}
+
+h1 {
+    display: inline-block;
+    position: relative;
+    top: -20px;
+    margin-left: 5px;
+    font-size: 50px;
+}
+
+.header {
+    background: linear-gradient(#0c7db1, #7da3b4, #0c7db1);
+    color: white;
+    padding: 15px;
+    padding-left: 30px;
+}
+
+.bg {
+    background: linear-gradient(#efe2ff, white); 
+    height: 628px;
+}
+
+.left {
+    display: inline-block;
+}
+
+.l-top {
+    height: 175px;
+    padding:5px; 
+    border-bottom: 2px solid #d4c9e2; 
+    width: 175px;
+    margin-left: 15px;
+}
+
+.l-top p {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+button {
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 5px;
+    display: block;
+    margin: 3px 0;
+}
+
+.blue {
+    background:linear-gradient(#72b2cf, #0c7db1);
+    color: white;
+    width: 167px;
+}
+
+.orange {
+    background: linear-gradient(#ffd280, orange);
+    color: white;
+}
+
+.l-bottom {
+    background-image: url("img/ad_background.png");
+    background-repeat: no-repeat;
+    color: white;
+    width: 165px;
+    margin: 25px 15px;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.l-bottom img {
+    position: relative;
+    left: -4px;
+    top: 5px;
+}
+
+.l-bottom button {
+    background-color: #35d0ff;
+    color: white;
+    width: 150px;
+    text-align: center;
+    margin: 20px 7px;
+}
+
+i {
+    vertical-align: top;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.right {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 30px;
+}
+
+.contact {
+    display: inline-block;
+    margin-left: 700px;
+}
+
+.contact p {
+    text-align: right;
+}
+
+.contact img {
+    height: 45px;
+    display: inline-block;
+    position: relative;
+    top: -5px;
+}
+
+.contact h2 {
+    font-size: 30px;
+    display: inline-block;
+    margin-left: 15px;
+    color: #35d0ff;
+    position: relative;
+    top: -20px;
+}
+
+.p2 {
+    position: relative;
+    top: -20px;
+    left: 15px;
+}
+
+.r-top {
+    border-bottom: 2px solid #d4c9e2;
+}
+
+.titles {
+    color: #0c7db1;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+ul {
+    width: 900px;
+    margin-left: 50px;
+    margin-top: 5px;
+}
+
+/* text aling center, margin left/rigth auto doesn't work? */
+.circles {
+    margin-left: 250px;
+    margin-bottom: 20px;
+}
+
+ol {
+    margin-left: 50px;
+}
+
+.bottom-box {
+    border: 3px solid rgb(0, 153, 255);
+    border-bottom: 3px solid white;
+    height: 115px;
+}
+
+.bottom-box img {
+    display: inline-block;
+    vertical-align: top
+}
+
+.b3 {
+    display: inline-block;
+    vertical-align: top;
+    width: 850px;
+    margin: 15px auto auto 20px;
+}
+
+.b3 p {
+    margin-bottom: 5px;
+}
+
+
+

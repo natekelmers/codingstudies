@@ -1,0 +1,8 @@
+- real estate website
+- house listings in dc, address, location, price, beds, baths, sq ft
+- can sort by townhouse, zip code
+
+- rendered data using crossfilter
+
+
+- next steps include comparison page, pop-ups for clicking on listings, 

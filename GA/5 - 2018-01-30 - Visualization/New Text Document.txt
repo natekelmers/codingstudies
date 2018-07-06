@@ -1,0 +1,56 @@
+Visualization
+
+---
+
+- Why are visualization's important?
+- See anscombe's quartet
+- Each of those 4 plots have the same mean, standard dev, r2, x and y intercepts for regressions, etc
+
+---
+
+Basics of plotting:
+
+- Bread and butter includes: bar, box, hisogram, line, scatter
+- Other good ones: swarm, violin
+
+- Charts that suck: pie charts (see how much better the bar graphs are?)
+
+---
+
+Matplotlib stuff...
+
+"<shift> + <tab>" inside a method shows all of its parameters
+
+To start working:
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+
+%config InlineBackend.figure_format = 'retina'
+
+plt.rcParams['figure.figsize'] = (8, 6)
+plt.rcParams['font.size'] = 17
+plt.style.use('seaborn-white') ("ggplot", "seaborn-white" are good ones)
+
+names = []
+url = ""
+data = pd.read_csv(url, header=0, names=names, na_filter=False)
+
+---
+
+Look again at:
+
+- adding x and y labels/titles
+- overlapping histograms and using plt.show()
+- making "binz" (bins of equal width)
+- converting dates or times into datetime objects
+- joe's finished code (for extra features for gridspec)
+
+---
+
+Useful:
+
+- "set([type(i) for i in <dataset>])" will quickly tell you what types of data are in your set
+- (helps with cleansing)
+

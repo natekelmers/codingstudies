@@ -1,0 +1,1 @@
+Anna, great job completing the level 2 criteria. The end solution looks great. One suggestion I have for the code in your "script.js" would be ____ (how to eliminate hard-code?)

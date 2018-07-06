@@ -1,0 +1,109 @@
+Don't worry about the "create a dictionary in which the key is the airline name..." question yet
+
+11-2 pm Saturday impromptu "intro to python"
+
+---
+
+The Command Line:
+
+CLI is a way of interacting with your computer using text-based commands (rather than GUI)
+
+Generally:
+
+<command> -<options> <arguments>
+
+Basic, helpful commends:
+
+"ls -l"        = lists files w extra info
+"ls -a"        = lists files w hidden files (such as git repositories)
+"ls *"         = lists files w extra info in long format (good if you don't know where something is)
+"ls <path>"    = lists files in another place
+
+"cd <path>"    = this lets you pick a folder/directory to do stuff in
+"cd .."        = go up one
+"cd"           = home
+
+"mkdir <name>" = makes a new directory
+"touch <name>" = makes a new file
+
+"mv <file> <dir> "         = moves a file
+"mv <file> <dir/new_name>" = moves it and renames it
+
+"cp <file> <dir>           = copies a file
+"cp <file> <dir/new_name>" = copies and renames
+
+"rm <file>"    = deletes a file pretty much for good
+"rm -i <file>" = deletes a file but asks "are you sure"
+
+"*"            = any string of characters in this spot
+"?"            = any one character in this spot
+
+- generally, '-i' means 'information', and will ask you "are you sure" when you do stuff
+- also, '-ir' means 'information/recursive', which is great for directories (will ask you "go in here?" > "remove this file? > "remove that file?" > "delete directory?"
+
+
+
+Intermediate, cool commands:
+
+"head <file>"     = prints the first 10 lines of something
+"head -n20 <file> = prints the first 20 lines of something
+
+"find <path> -name <*file*>" = shows the names of stuff in directories with certain names
+
+"grep <stuff> <file>"        = shows stuff inside a file with certain info (for ex: grep Airline airlines.csv will print stuff with the word "Airline" in it)
+
+"|"               = chains commands together
+
+
+
+
+---
+
+Random thoughts...
+
+- Microsoft word files are xml files, basically text files with tons of structure around them
+- This means if python looks at your word file it will get screwed up
+- Other options exist (Sublime, Vim, etc) (Alex uses Sublime)
+
+- Vim is crazy weird but good so we should learn some basic Vim stuff, like...
+  "esc"                   = lets you type at the bottom
+  "(shift) + (":") > "q!" = quit vim
+
+- Start looking at final project examples to figure out what you want to do
+
+- There's some sick advanced python stuff if you just scroll down on the GA/DS-DC-25
+
+- Contributing to the overall community of Github is a good way to build your profile/resume (especially helping with good-but-poorly-documented code)
+- Alex committed to "gensim"... how do you find the right stuff to commit to?
+
+- Consider checking out videos by Linus Torvald (git), Oliver G (scikit-learn)
+
+---
+
+Personal repository:
+
+$ git config --global user.name "<name>"
+
+$ git config --global user.email "<email>"
+
+$ git clone <url>
+
+
+
+To pull from the master (START OF EVERY CLASS):
+
+$ git pull upstream master
+
+
+
+To get new stuff:
+
+$ git status              = checks to see if everything is up to date
+$ git add <file>          = adds file to staging area
+$ git reset HEAD <file>   = removes file from staging area
+$ git commit -m <message> = commits your file to upstream with the message you wanted
+$ git log                 = view commit history (just in case)
+$ git push origin master  = merge it with the master
+
+
+

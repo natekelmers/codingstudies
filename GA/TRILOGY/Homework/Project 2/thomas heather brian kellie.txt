@@ -1,0 +1,9 @@
+- question: determine "stress" of transit to a vacation (how difficult will your trip be, based on length of layover, likelihood/length of delay, etc)
+- tsa and bureau of transportation data
+
+- json data, sqlite database, flask
+- can pick origin and destination and see how hard your trip will be
+- takes inputs, feeds to api, returns data onscreen
+
+- https://github.com/thomasjoldfield/project2-job-dashboard
+

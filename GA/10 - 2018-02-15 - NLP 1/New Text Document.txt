@@ -1,0 +1,82 @@
+NLP packages:
+
+nltk - academic nlp package
+textblob - simpler interface to nltk
+
+spaCy - alex' personal favorite, new
+textacy - new api
+
+gensim
+
+---
+
+- NLP: using unstructured text to get insider info
+
+- broad enough that it can be specialized in for a whole career (also, timeseries data)
+- practical enough for real data science
+
+- can automate manual decisions for profit or time
+
+- see "natural_language_processing.ipynb" for some higher-level and lower-level tasks
+- information extraction, sentiment analysis, 
+- for example, hilton analyzes topics and sentiment as you speak to your agent so it can help the agent
+
+
+
+---
+
+- To make features meaningful:
+
+- tokenization, remove stop-words, stemming/lemmatization, tf-idf, part of speech tagging
+- word sense disambiguation (see spacy and gensim article)
+
+- For example, for Airbnb to predict price for:
+- "Beautiful spacious 1-br apt. walking distance from U. Station"
+
+- punctuation:
+- lemmatization: walk
+- stop:
+- phrase: walking distance; 
+- entities: 1-bedroom; Union Station; 
+- acronyms: 
+- part-of-speech: beautiful apt; spacious apt; 1-bedroom apt
+
+
+---
+
+What makes NLP hard?
+
+- ambiguity
+- non-standard english/newly coined words (slang, text, etc)
+- idioms ("throw in the towel")
+- weird entities ("A Bug's Life")
+
+
+---
+
+Thoughts on the yelp dataset:
+
+- it's easier to categorize data when you only have two categories
+- so we're going to practice with the 1 and 5 star ratings
+
+
+
+---
+
+Thoughts on working with text data in scikitlearn:
+
+- CountVectorizer tries to give structure to unstructured data by creating features
+- will .lower() everything, drop stop words
+
+- "Document term matrix" or "sparse matrix" are tuples that tell you where the 1s are
+- (After you've created thousands of features and most of them contain a 0)
+- You can send "<data>_dtm.toarray()" to your dataframe
+
+
+
+---
+
+The insight into the project:
+
+- do not build lots of features and make a model, but...
+- build features, evaluate them, examine false positives/negatives

@@ -1,0 +1,11 @@
+- wu-tang project
+- scroll-magic for visualizations
+
+- stimura.github.io/wu_tang_clan
+
+- analyzed wu-tang clan by album, song, artist, who is rapping where
+- analyzed word counts, 
+
+- GENIUS API! SPOTIFY API!
+- pulled down lyrics, pulled down metadata
+- aligned datasets using sqlalchemy to put into a sqlite databases

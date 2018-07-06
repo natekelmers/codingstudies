@@ -1,0 +1,6 @@
+Pt 1
+
+Looks good. Nice job using the zip function to create your dictionary, which can be useful for keeping your code tidy and readable.
+
+Pt 2
+

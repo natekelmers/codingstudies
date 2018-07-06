@@ -1,0 +1,12 @@
+- air traffic data exploration
+
+- "using a combination of real-time and historical data provides visualization of data related to aircraft flights over specific time periods and locations"
+
+- built a dashboard page
+- used opensky network, flightaware, and us dept of transportation
+- using data from april 17-18, used airline performance data for airlines in usa
+- put the data into a sqlite database to calculate measures of airline performance by airline, location, etc
+- used heroku to deploy
+- can download flight data by unique adsb code
+
+- 

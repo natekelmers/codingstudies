@@ -1,0 +1,7 @@
+- question: "how can we aid a policy analyst make good policy to cut down on dui data?"
+- (increase law enforcement? prohibit alcohol sales on sunday? extend public transportation hours?)
+- data from multiple public sources...
+
+- dashboard is in html using bootstrap, 
+
+- (i don't feel like this is that good of a project)

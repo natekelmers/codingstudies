@@ -1,0 +1,75 @@
+- train-test split
+
+- see sklearn metrics.<stuff> to check out different metrics for evaluating models
+
+Does accuracy define the quality of a classification model?
+
+- think critically...
+- cancer example (if 1% of people have cancer, and the model is "def cancer(person) / return False", it's 99% accurate but it's a terrible model)
+- must think critically about what we are trying to predict
+
+Thoughts on testing and training with the same dataset...
+
+- generally "overfit"
+- does well when tested using in-sample data
+- might do poorly when testing out-of-sample
+- learns the noise with the signal
+
+Unpacking...
+
+- can return certain variables from functions at a time
+- for ex:
+
+def min_max(nums)
+  smallest = min(nums)
+  largest = max(nums)
+  return [smallest, largest]
+
+minimum, maximum = min_max([1, 2, 3, 4, 5])
+
+print minimum
+print maximum
+
+1
+5
+
+
+
+Searching for the "best" value of k...
+
+- You can write a loop that loops over K, re-instantiates the model with the K value, re-calculates training and testing errors
+
+k_range = range(1, k)
+training_error = []
+testing_error = []
+
+for k in k_range:
+    knn = KNeighborsClassifier(n_neighbors=k)
+    knn.fit(X, y)
+    y_pred_class = knn.predict(X)
+    training_accuracy = metrics.accuracy_score(y, y_pred_class)
+    training_error.append(1 - training_accuracy)
+    knn.fit(X_train, y_train)
+    y_pred_class = knn.predict(X_test)
+    testing_accuracy = metrics.accuracy_score(y_test, y_pred_class)
+    testing_error.append(1 - testing_accuracy)
+
+
+
+Cross validation is generally more accurate than train-test split, but it takes more time (also a "sign of expertise in machine learning")
+
+
+
+- The cancer-model (99% accurate model that's terrible because it never actually predicts cancer) example was really helpful in terms of explaining both "why accuracy doesn't define quality of a model" and also what null accuracy means.
+- The graphical example bias/variance was helpful to visualize the trade-offs.
+- Thanks for telling us about pip install/conda install
+- Appreciated telling us "the best students apply techniques immediately to project dataset..."
+
+
+
+"pip install selenium" or "conda install selenium"
+
+
+
+ISLR videos
+StatsLearning Lect7c 110613

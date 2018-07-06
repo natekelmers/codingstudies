@@ -1,0 +1,20 @@
+2018-06-18 CONVO WITH SASHA
+
+- Data is hard to fill!
+- Most students have another job, know what their next step in their career is
+- This is the end of the ride! (remember the "getting tired" feeling?)
+
+- Class is a little quieter than normal right now, try to help students out a little
+- Make them feel like they have the support however you can (talk to the students, check the slack channel, etc etc etc)
+
+- Check attendence when class starts, slack them if they stay "none" by 7ish
+
+- Make sure you grade your papers (homework is always due on saturdays)
+- Filter by ungraded, click "submitted link _", 
+- Grading rubrics should be there on GitHub
+
+- On BootCampSpot, if you can't answer a question, try the live chat (when green)
+- Or, submit a ticket
+
+- GitLab is the cohort-specific repository
+- So, if I need to grade a homework, use GitLab, and pull down the specific resources

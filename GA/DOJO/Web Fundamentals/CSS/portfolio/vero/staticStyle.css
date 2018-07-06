@@ -1,0 +1,185 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+#wrapper {
+    background: radial-gradient(#8b7183,#422137);
+    padding: 1em; 
+    height: 1200px;
+    width: 950px;  
+}
+
+#wrapper h2, h3 {
+    color: #ecebec;
+    background: linear-gradient(#dddcdd, #929192, #dddcdd);
+    padding: 0.25em;
+
+}
+
+#header {
+    width: 950px;
+    background: linear-gradient(#ecebec, white);
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+#header h2 {
+    margin-top: 0.25em;
+}
+
+#header h1 {
+    font-family:"Comic Sans MS", cursive, sans-serif;
+}
+
+#header h2 {
+    margin-top: 0.25em;
+}
+
+#top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;    
+}
+
+#top img {
+    height: 250px;
+    border: 5px solid #ecebec;
+    display: inline-block;
+}
+
+#top h2 {
+    width: 533px;
+}
+
+#mid {
+    display: flex;
+    justify-content: space-around;
+}
+
+#footer {
+    position: absolute;
+    top: 1140px;
+    background: linear-gradient(#ecebec, white);
+    width: 950px;
+    margin-left: 12px;    
+}
+
+#footer p {
+    background: linear-gradient(#ecebec, white);
+}
+
+.text {
+    height: 260px;
+    margin-left: 15px;
+    background: linear-gradient(to right, #ecebec, #c3a4ba);    
+}
+
+.text h2 {
+    margin: 0;
+    width: 430px; 
+}
+
+.card {
+    width: 290px;
+    height: 500px;
+    display: inline-block;
+}
+
+
+.card img {
+    width: 302px;
+}
+
+.card-link {
+    background: linear-gradient(to right, #ecebec, #c3a4ba);    
+    width: 302px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+} 
+
+.card a {
+    width: 130px;
+    margin: 0 auto 25px;
+    padding: 2px;
+    background-color: #c551a4;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    border: 1px solid #753062;
+    box-shadow: 4px 4px 5px #704c63;
+}
+
+.card p {
+    height: 300px;
+}
+
+.card1 img{
+    width: 302px;
+}
+
+.card1 p {
+    width: 270px;
+}
+
+.card h2 {
+    width: 290px;
+}
+
+.card h3 {
+    width: 293px;
+}
+
+.card1 h3 {
+    width: 292px;
+}
+
+.card2 h2{
+    width: 290px;
+    margin-left: 0;
+}
+
+.card2 p {
+    width: 270px;
+}
+
+.card3 h2{
+    width: 290px;
+}
+
+.card3 p {
+    width: 270px;
+}
+
+.techs {
+    background: linear-gradient(to right, #ecebec, #c3a4ba);    
+    width: 286px;
+    padding: 8px;
+}
+
+.techs img {
+    height: 42px;
+    width: 42px;
+    margin: 5px;
+    display: inline-block;
+}
+
+
+
+/* #card1 img, h2, p, h3{
+    width: 400px;
+} */
+
+h1 {
+    font-family:"Comic Sans MS", cursive, sans-serif;
+}
+
+p {
+    background: linear-gradient(to right, #ecebec, #c3a4ba);    
+    padding: 1em;
+}

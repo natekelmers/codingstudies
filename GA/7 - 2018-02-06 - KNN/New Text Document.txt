@@ -1,0 +1,54 @@
+http://github.com/rasbt/pattern_classification
+^See this diagram about "the process" for data science
+
+---
+
+- When thinking about machine learning, often we think of "similarity" or "distance"
+- How can we measure that "this" is the closest point?
+- Euclidean distance (a^2 + b^2 = c^2) (L2 norm) (||x||2) (x1^n + x2^n)^(1/n)
+- Absolute distance (|a| + |b|) (L1 norm) (||x||1) (x1 + x2)
+- "In machine learning, a hyperparameter is a parameter whose value is set before the learning process begins. By contrast, the values of other parameters are derived via training." - wiki
+- (Different data points have different weighting patterns on predictions, roughly)
+
+- "parametric" is like y = b0 + b1x1 + b2x2 + ...
+- "non-parametric" means it works with many distribution patterns
+
+---
+
+Wisdom:
+
+- "As data scientists, always think about: the data we're passing in and how we're going to tune the algorithm"
+
+- "What's the 'best' value for K?
+- "The value which produces the most "accurate" predictions on unseen data. We want to create a model that generalizes!"
+- As k increases, processing does too, so optimizations must occur somehow
+- Accuracy is not the end-all-be-all (speed matters)
+
+- Scikitlearn is true object-oriented programming
+- See http://scikit-learn.org/stable/ for some general features
+
+- Generally, we normalize > add new columns > make predictions
+
+- Generally, we build lots of models at the same time and check them all to see which one is best
+
+- Model evaluation (thursday) might be the most important day of the class
+
+- Beware that different scales (inches vs miles, for example) can mess with your knn
+
+---
+
+Handy:
+
+%matplotlib inline
+^To show visualization
+
+.drop(inplace = False) is good to clean up your visualization without messing up your data
+
+- Use the scikitlearn documentation to figure out what parameters affect your model
+- For example, different weights...
+- Radius maybe good for locations (if nearest 5 houses are 10 miles away, do they really matter much?)
+- See distance metrics on scikitlearn for different distance metric ideas
+- (see hamming, Levenshtein distance, "approximate string matching" on wiki for example)
+- I found "https://brilliant.org/wiki/error-correcting-codes/" when I searched "brilliant.org hamming"
+
+Run the "Selenium" workbook to see it do some stuff on the OPM site

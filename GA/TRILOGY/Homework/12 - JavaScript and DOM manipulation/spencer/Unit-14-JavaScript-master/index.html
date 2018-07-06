@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>UFO Sightings</title>
+  <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="row">
+      <div class = "col-xs-6 col-md-12">
+        <h1>Unidentified Flying Object (UFO) Sightings</h1>
+        <p>The table below contains actual data of fake sightings.</p>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-xs-2 col-md-3">
+        <div class="panel panel-default">
+
+          <div class="panel-heading">
+            <h3 class="panel-title">Search</h3>
+          </div>
+
+          <div class="panel-body">
+            <div class="form-group">
+              <input type="text" class="form-control" id="date" placeholder="Date (M/D/YYYY)">
+              <br>
+              <input type="text" class="form-control" id="city" placeholder="City">
+              <br>
+              <input type="text" class="form-control" id="state" placeholder="State">
+              <br>
+              <select id="country">
+                <option value="">(Country)</option>
+                <option value="us">USA</option> 
+                <option value="ca">Canada</option>
+                <option value="gb">Great Britain</option>
+                <option value="au">Australia</option>
+              </select>
+              <br><br>
+              <select id="shape">
+                <option value="">(Shape)</option>
+                <option value="triangle">Triangle</option>
+                <option value="rectangle">Rectangle</option>
+                <option value="circle">Circle</option>
+                <option value="sphere">Sphere</option>
+                <option value="disk">Disk</option>
+                <option value="oval">Oval</option>
+                <option value="egg">Egg</option>
+                <option value="cigar">Cigar</option>
+                <option value="teardrop">Teardrop</option>
+                <option value="cylinder">Cylinder</option>
+                <option value="cross">Cross</option>
+                <option value="chevron">Chevron</option>
+                <option value="diamond">Diamond</option>
+                <option value="cone">Cone</option>
+                <option value="">--------</option>
+                <option value="light">Light</option>
+                <option value="fireball">Fireball</option>
+                <option value="formation">Formation</option>
+                <option value="flash">Flash</option>
+                <option value="changing">Changing</option>
+                <option value="">--------</option>
+                <option value="other">Other</option>
+                <option value="unknown">Unknown</option>
+              </select>
+              <br><br>
+              <a style = "padding: 8px" id="search" class="btn btn-success">Search</a>
+              &nbsp;
+              <a style = "padding: 8px" id="clear" class="btn btn-success">Clear</a>
+            </div> <!-- Form -->
+          </div> <!-- Panel Body -->
+
+        </div> <!-- Panel -->
+      </div> <!-- Grid -->
+        
+      <div class="col-xs-6 col-md-9">
+        <div class="panel panel-default">
+
+          <div class="panel-heading">
+            <h3 class="panel-title">UFO Sightings</h3>
+          </div>
+
+          <div class="panel-body">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>City</th>
+                  <th>State</th>
+                  <th>Country</th>
+                  <th>Shape</th>
+                  <th>Duration</th>
+                  <th>Comments</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div> <!-- Panel Body -->
+        </div> <!-- Panel -->
+      </div> <!-- Grid -->     
+    </div> <!-- Row -->
+  </div> <!-- Container -->
+
+  <script src="data.js" type="text/javascript"></script>
+  <script src="index.js" type="text/javascript"></script>
+
+</body>
+</html>

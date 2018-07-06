@@ -1,0 +1,48 @@
+Cleaning...
+
+- before investing time into a column (like imputing values) sanity check (often with ".describe()")
+- 
+
+
+
+Handling categorical data...
+
+- ordered categories can be transformed into numeric values (small = 1, medium = 2, large = 3)
+- note that scikitlearn will assume the distance between these numbers will be equal
+- (so maybe 1, 2, 5 is better for predicting expenses, like shirt size, or something)
+
+- unordered categories should use dummy variables
+- add one new column per subgroup of the variable, only "0" or "1", each row only gets a single "1"
+- create these by creating a dataframe of dummy variables, dropping the original in the new frame, and concatenating the dataframes
+
+
+
+Evaluation...
+
+- for "yes" or "no" predictions, logistic regression is works well
+- see scikit-learn.org/stables/modules/classes.html to see some good classification metrics
+- "f1 score"/"balanced f-score"/"f-measure" is a weighted average (harmonic mean) of precision and recall (useful)
+
+- generally, ask yourself early what to optimize based on the situation (precision or recall, for ex?)
+- 
+
+
+
+ROC Curves...
+
+- plots the false positive rate vs the true positive rate
+- can easily show the impact of choosing different threshold values on your false positives vs false negatives
+- and therefore, where it makes sense to put your threshold
+
+- calculating the auc (area under curve) for the roc helps balance sensitivity and specificity
+
+
+
+Wisdom...
+
+- As a data scientist, you should build lots of models quickly, rather than perfect one model
+- ".apply(function)" is 
+- "%%time" will tell you how long the code takes to run in Jupyter
+
+
+

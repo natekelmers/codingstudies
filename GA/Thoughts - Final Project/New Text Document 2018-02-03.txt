@@ -1,0 +1,40 @@
+https://www.kaggle.com/datasnaek/mbti-type
+
+- Read this dataset's kernals 
+- FINDING: "Introverts write posts with more nouns, extroverts write posts with more verbs"
+
+---
+
+- Can I do something with the "What song are you listening to now?" thread?
+http://personalitycafe.com/book-music-movie-reviews/
+
+---
+
+Similar sites to Personality Cafe:
+
+http://www.similarsitesearch.com/s.php?t1=1&t2=1&t4=1&t5=1&URL=http%3A%2F%2Fpersonalitycafe.com%2F&F=1&id=245363376&TAG=
+
+---
+
+Insight:
+
+https://mic.com/articles/99744/the-science-behind-why-you-listen-to-your-favorite-songs-obsessively#.KuHo8yUb1
+
+- It's because you imagine yourself singing/dancing/whatever to the song as you listen to it
+
+---
+
+First I need to confirm as fast as possible:
+
+- Can I get my data?
+- (Can I get the personality types of the users? Can I get the songs those users listened to?)
+
+- In data science experiments: you need the response first
+- I need to confirm if I can get the response (y) (the mbti)
+- What's the everything else that could help? (x)
+
+- product managers: direct the team on what to focus on (what's our feature?)
+- what business metric is this feature tied to? (the y)
+- in a data sense: what data/information/etc do we need to guide that development? (the x)
+
+- can I keep my team on this topic?

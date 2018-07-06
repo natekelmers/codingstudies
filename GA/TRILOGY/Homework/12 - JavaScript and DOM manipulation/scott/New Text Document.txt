@@ -1,0 +1,1 @@
+Scott, nice work, your solution works and meets the criteria. One suggestion would be to use a dropdown for a table column without many choices (like "shape").

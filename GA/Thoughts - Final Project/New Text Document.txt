@@ -1,0 +1,57 @@
+https://twitter.com/ResearchBlogs
+
+---
+
+"how working memory goes wrong in schizophrenia"
+https://psychcentral.com/news/2018/01/20/how-working-memory-goes-wrong-in-schizophrenia/131490.html?utm_content=buffer048fe&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
+
+Schizophrenia is a chronic debilitating mental disorder characterized by psychotic “positive” symptoms, such as delusions, hallucinations, paranoia, and disordered thinking, as well as “negative” symptoms. The latter include loss of motivation or judgment, memory problems, slowed movement, lost interest in hygiene, and social withdrawal.
+
+Researchers at the University of Pittsburgh studied the patterns of the neurotransmitters glutamate and GABA in a network of brain regions that temporarily maintain and process visual information about the location of objects in space. This cognitive ability is known as visuospatial working memory. Their findings suggest that the exact balance between glutamate (the excitatory or “accelerator” neurotransmitter) and GABA (the inhibitory or “brake” neurotransmitter) might be shifted in certain brain regions in schizophrenia patients.
+
+“In the normal human brain, the relative weighting of markers of excitatory and inhibitory neurotransmission differ markedly across the distributed cortical network that mediates working memory,” said David Lewis, M.D., who led the study. “In schizophrenia this weighting is disrupted by region-specific alterations in markers of both excitatory and inhibitory neurotransmission,” he added.
+
+---
+
+What are areas of academic research that have some sort of systemic issue? For example, in psychology, studies that cannot be replicated. Or, in dietetics, studies that get retracted. Is there a way to analyze papers that have been retracted or "proven bad" and predict which other papers are "bad"?
+
+---
+
+"The incidence of depressive and anxiety disorders is much lower in Asia than in the West. Why?"
+
+https://www.psychologytoday.com/blog/talking-apes/201711/east-west-cultural-differences-in-depression
+
+Researchers propose that cultural differences in emotional disorders are due to the way Easterners and Westerners think about and respond to emotions.
+
+Westerners approach the world from an analytical perspective. They tend to divide the world into mutually exclusive categories—self versus other, good versus evil, happiness versus sadness. They also have the habit of mentally isolating people, objects, and events from the broader context in which they occur. Westerners tend to think of themselves as independent, viewing the self as a kind of free agent in interactions with others.
+
+In contrast, people in Eastern cultures tend to view the world in a holistic fashion. They don’t think in terms of mutually exclusive categories. In fact, they expect opposites to coexist, as symbolized by yin and yang—a bit of darkness in the light, and a spot of light in the darkness. Furthermore, when attending to a person or object, they’re more likely to also consider the influence of the broader context. Easterners also see themselves as interdependent with others, defining the self in terms of relationships and mutual obligations.
+
+---
+
+Make sure to check:
+
+https://www.reddit.com/r/tableau
+https://www.reddit.com/r/dataisbeautiful/
+https://www.reddit.com/r/visualization/
+https://www.reddit.com/r/datasets/
+https://www.reddit.com/r/opendata/
+https://www.reddit.com/r/bigdata/
+
+---
+
+- Introduction to Statistical Learning (ISL) pdf is the "bible" for this stuff
+
+- If I want to learn what technologies are on the forefront, maybe I should just hunt down the latest computer science research at top tier universities (stanford handwriting/zip-code example)
+
+- entity resolution ("how do I know this guy is talking about bands and not 'arctic monkeys'?")
+
+- don't think "what are the individual features?" but "what features (when grouped together) tell me the bigger picture?"
+
+---
+
+- Check out Kaggle! (and the problems they have as competitions)
+- Consider machine learning and models
+- Check out last year's problems
+
+---

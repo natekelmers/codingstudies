@@ -1,0 +1,53 @@
+*To find out if you can scrape or not, check out the site's robots.txt (which will tell you what not to scrape)*
+
+---
+
+Web scraping basics:
+
+- Three main langauges: html (the website's "skeleton"), javascript (website's functionality, "organs"/"muscle"), and css (the "skin")
+- Right click and open up "inspect", click anything and it will show you where in the html the "thing" is
+- "<div> </div>" is basically a "paragraph" of the html
+- "<body>" of the source page contains these
+
+---
+
+- We want the libraries "request" and "BeautifulSoup"...
+
+First:
+
+import requests
+url = r'http://econpy.pythonanywhere.com/ex/001.html'
+r = requests.get(url)
+
+Then, in console:
+
+r				# to see if it works (200 is good)
+r.text				# to see the html (200 is good)
+
+Then, to make the html "pretty":
+
+from bs4 import BeautifulSoup
+b = BeautifulSoup(r.text)
+
+print(b)			# looks better
+print(b.prettify())		# looks much better, but hides things sometimes
+
+print(b.find(name="div"))	# goes to find the first tag
+len(b.find_all(name="div))	# tells me how many div tags there are
+
+b.find_all(name='div')[1].text	# slices the divs like a list (use this to discover what to scrape)
+b.find_all(name='div', title='')# gives us an element within the tag
+
+
+
+---
+
+Example of a web-scraping function:
+
+def get_movie_year(title):
+    title = title.lower()
+    url = "http://www.omdbapi.com/?apikey=9542f4e1&t={}&r=json&type=movie".format(title)
+    r = requests.get(url)
+    if r.json()["Response"] == False:
+        return None
+    return r.json()['Year']

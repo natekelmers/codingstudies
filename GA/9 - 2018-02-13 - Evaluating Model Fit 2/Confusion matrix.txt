@@ -1,0 +1,85 @@
+Confusion matrix:
+
+---
+
+- classes = outcomes for predictions
+
+- type 1 = false positive
+- type 2 = false negative
+
+- accuracy:
+- correct = true positives + true negatives
+
+- misclassification:
+- incorrect = false positives + false negatives
+
+- false positive rate:
+- when an actual value is negative, how often is prediction wrong?
+- false positive / actual negative = __
+
+- specificity:
+- when an actual value is negative, how often is prediction right?
+- true positive / actual positive = __
+
+- sensitivity or "recall":
+- how well do we identify positives?
+- true positive / actual positive = __
+
+- precision:
+- how well do we minimize false positives?
+- true positive / (tp + fp) = __
+
+
+
+---
+
+(1)
+35, 05,
+20, 40,
+
+recall: 40/60 = 66.67%
+precision: 40/45 = 88.89%
+
+(2)
+35, 15
+10, 40
+
+recall: 40/50 = 80%
+precision: 40/55 = 72.73%
+
+(3)
+44, 06
+15, 35
+
+recall: 35/50 = 70%
+precision: 35/41 = 85.37%
+
+(4)
+47, 08
+10, 35
+
+recall: 35/45 = 77.78%
+precision: 35/43 = 81.40%
+
+---
+
+let's link these to some business problems...
+
+- Facebook: show or censor post?
+- we probably care more about sensitivity/recall more than precision
+- cost of accidentally blocking a post is low, so maximize recall
+- so, model 2
+
+- Twitter: troll?
+- we want to identify these accounts, so we want to prioritize high recall
+- want to maximize precision (cost of blocking a user is relatively high)
+
+- Amazon: product review fake or not?
+- 
+
+- FCC: automated net neutrality comment?
+- 
+
+- Visa: is or is not fraud?
+- want to maximize sensitivity
+- identify maximum fraud, false positives are not costly compared to true negatives

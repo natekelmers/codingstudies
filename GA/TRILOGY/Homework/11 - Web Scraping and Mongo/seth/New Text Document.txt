@@ -1,0 +1,3 @@
+Pt 1
+
+Seth, nice work. Only suggestion would be not to leave your soup objects printed in the notebook. The length of the text will make the notebook difficult to navigate, and occasionally, prevent browsers from loading the notebook via GitHub (I do think printing to examine the structure is a good idea though).

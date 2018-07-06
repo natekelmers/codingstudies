@@ -1,0 +1,91 @@
+The "06_machine_learning.pptx" will talk about supervised learning, unsupervised learning, and a little bit about the concepts that my final project should show
+
+---
+
+
+"What is machine learning?"
+
+- "A field of study that gives computers the bility to learn without being explicitly programmed" - Arthur Samuel (1959)
+
+- we don't create the software...
+- the data creates the software!
+- the programmers are instead curators of data and software
+
+- Yann LeCun (director of a.i. at facebook):
+- "Machine learning is the semi-automatic extraction of knowledge from data" (stars with a question tha tmight be answerable using data / computer provides the insight / requires at least some smart decisions by a human)
+- (smart decisions like asking the right question, getting the right data, evaluating the outcomes correctly)
+- (not "which algorithm will I create" but "which data will I curate")
+
+- https://www.reddit.com/r/MachineLearning/comments/25lnbt/ama_yann_lecun/
+
+---
+
+Supervised Learning ("predictive modeling"):
+
+- "I know what I'm trying to predict"
+- predicts output based on input data (spam or ham/not spam), goal is "generalization" of a future prediction
+- regression: outcome to predict is continuous (price, blood pressure, etc)
+- classification: outcome to predict is categorical (spam/ham)
+- most problems have some elements of both regression or classification and "the right one" depends on the end goal (for example, netflix making a prediction for a recommended movie/show, the user may only see a thumbs up or down, but netflix will rank choice the movies to show the absolute best ones to the user)
+
+- (sometimes phrased as "observations (n)", "features (x)", "response (y)", see the deck)
+
+- Supervised machine learning works by:
+- train a machine learning model using labeled data
+
+- some models of supervised learning:
+- decision tree = draw lines between clusters
+- svm (support vector machine) = draw lines where the points are as far away from the lines as possible
+- knn = k-nearest neighbors = similarity (distance) between datapoints
+- density of clusters 
+- p(a|b) = p(b*a)/a
+
+---
+
+Unsupervised Learning:
+- "I'm looking for groupings"
+- extracting structure from data, such as segmenting shoppers to clusters that exhibit similar behaviors
+- goal is "representation"
+
+- clustering = group "similar" data points together
+- dimensionality reduction = simplify a dataset by extracdting features that capture maximum variance of the data
+
+- No clear objective, no "right answer", no "response" variable, and labeled data is not actually required
+
+---
+
+Thoughts:
+
+Common questions in data science?
+
+- Machine learning is basically asking the following questions:
+- Does x predict y? (x = data, y = outcome)
+- Are there any distinct groups in our data?
+- What are the key components of our data?
+- Is any observation "weird"/why?
+
+Questions (from a business perspective):
+
+- Likelihood a customer will buy?
+- Is this a "good" or "bad" review?
+- How much demand will there be for my service tomorrow?
+- Is there a cheaper way to delivery my good?
+- Can I better segment my customers for my marketing strategy?
+- What groups of products are purchased together?
+- Can we automate this decision?
+
+http://www.kaggle.com/wiki/datascienceusecases
+^Read the "No Free Hunch" blog posts by the winners to see how they creatively get value from the data
+
+Demographics are better than nothing, but actions (clicks) are much better than that
+- For example, in singapore, removing demographic weights/assumptions from predictions increases engagement ("maybe that english guy has a good reason for wanting to watch chinese stuff...")
+
+Feature engineering:
+1) doesn't take lots of data to collect info...
+2) obvious is not always useful
+3) reverse engineer processes
+4) Good = invariant, stable, unique, ,independent, efficient
+
+---
+
+- reinforcement:

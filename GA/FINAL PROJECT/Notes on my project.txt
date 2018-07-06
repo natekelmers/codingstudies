@@ -1,0 +1,133 @@
+DATA - PERSONALITY
+
+# Data goes here:
+# https://www.kaggle.com/datasnaek/mbti-type
+
+# To get list of members who posted in a thread, click on the reply count on the thread
+# Member URLs look like: http://personalitycafe.com/members/surreal-snake.html
+# MBTI type under the "About Me" tab (middle of the page)
+
+# Another MBTI's "What are you listening to?" thread...
+# https://www.typologycentral.com/forums/arts-and-entertainment/622-listening.html
+
+
+
+DATA - MUSIC
+
+# FMA - Free Music Archive
+# https://arxiv.org/abs/1612.01840
+# https://archive.ics.uci.edu/ml/datasets/FMA%3A+A+Dataset+For+Music+Analysis
+
+# Million song dataset
+# https://labrosa.ee.columbia.edu/millionsong/
+# https://labrosa.ee.columbia.edu/millionsong/pages/example-track-description
+
+# Getting song lyrics from Genius (API scraping)
+# https://bigishdata.com/2016/09/27/getting-song-lyrics-from-geniuss-api-scraping/
+
+
+
+MUSIC
+
+# Music research goes here:
+# (Note: validate these for impact, power, repeatability, etc)
+
+# http://researchblogging.org/post-search/list?search_text=music
+
+# "Do you crave music like you crave a cookie?"
+# http://kiraleemusgrove.com/blog/do-you-crave-music-like-you-crave-a-cookie
+# Craving (of food, substance, etc) involves a pre-emptive sense of the reward, music is similar.
+
+# "Why you should fire up about music neuroscience"
+# http://researchblogging.org/post/gotourl/id/465419
+
+# ^Related, Kiralee Musgrove is a great blogger (read her shit)
+# http://researchblogging.org/blogger/home/id/4331
+
+# "Affective reactions to musical stimuli reflect emotional use of music in everyday life"
+# http://journals.sagepub.com/doi/abs/10.1177/1029864912462381
+# (Generally, music is a tool for emotional self-regulation in everyday life)
+
+# Imagine: Listening to Songs Which Make Us More Generous
+# https://thenextregeneration.wordpress.com/2016/11/18/imagine-listening-to-songs-which-make-us-more-generous/
+# Music with prosocial lyrics appear to increase prosocial behavior
+
+# Why does music training increase intelligence?
+# http://researchblogging.org/post/gotourl/id/468891
+
+# The curious effect of a musical rhythm on us
+# http://researchblogging.org/post/gotourl/id/468282
+# Entrainment to an auditory signal: Is attention involved?
+# http://www.ncbi.nlm.nih.gov/pubmed/28054814
+
+# Songs like "Angel of Death" protect heavy metal fans from existential angst
+# https://digest.bps.org.uk/2016/07/18/songs-like-angel-of-death-protect-heavy-metal-fans-from-existential-angst/
+
+# Kunert R, & Slevc LR (2015). A Commentary on: “Neural overlap in processing music and speech”.
+# Frontiers in human neuroscience, 9 PMID: 26089792
+
+# Kunert R, Willems RM, & Hagoort P (2016). Language influences music harmony perception:
+# effects of shared syntactic integrationresources beyond attention.
+# Royal Society open science, 3 (2) PMID: 26998339
+
+# Publishers withdraw over 120 fake papers
+# http://www.nature.com/news/publishers-withdraw-more-than-120-gibberish-papers-1.14763
+
+
+
+RANDOM
+
+# Read later:
+
+# "How to raise a genius" (tracking the longitudinal "genius" study)
+# http://brainposts.blogspot.com/2016/09/nuturing-gifted-ii.html
+
+# What actually explains expertise
+# https://digest.bps.org.uk/2016/06/07/10000-hours-debunked-again-in-elite-sport-amount-of-practice-does-not-explain-who-performs-best/
+
+# How to predict unreplicable studies?
+# https://brainsidea.wordpress.com/2016/04/25/yet-more-evidence-for-questionable-research-practices-in-original-studies-of-reproducibility-project-psychology/
+
+# http://keenetrial.com/blog/2017/03/08/a-secret-weapon-for-voir-dire-smart-people-are-more-curious/
+# “What they found was that participants who scored higher on the curiosity scale were more likely to choose the story 
+# that would disconfirm their preexisting beliefs (that is, it would surprise them) and the participants enjoyed that 
+# process of surprise.”
+
+# https://thinkeracademy.com/study-habits-successful-students/
+# 1. Successful students plan study time and know what to study next.
+# 2. Successful students test themselves habitually.
+# 3. Successful students read and reread their course material.
+
+
+
+PRODUCT MANAGER STUFF
+
+# Twitter/facebook settings > ads (on the left side) > your interests, advertisers you're interacted with, 
+# your info, ad settings, etc
+
+# twitter.com/settings/your_twitter_data/twitter_interests
+
+# Spotify's algorithmic playlist
+
+# Spotify.me
+
+# Spotify for brands
+
+# Post on facebook, "Hey if you use spotify can I interview you for 10 minutes..."
+
+# Look at your own facebook and try to tell me something on that page isn't ridiculous
+
+# How many more clicks could youtube generate if they could tell the REAL difference why
+# you like Kendrick Lamar or I like Kendrick Lamar?
+
+# What's the difference between you and me listening to Kendrick Lamar at 2 in the morning?
+# Should the next song be a chill one or be some DMX?
+
+# Could help better target ads as well (chill kendrick > pepsi or hype kendrick > bacardi?)
+
+# facebook strategy > (social profile + likes) = interests graph
+# google strategy > searches = intent
+# spotify > listening history
+
+# Generally, advertisers are profiling you from their point of view (a "millenial" with "____" interests)
+# How can advertisers better understand their audience? See their audience from the audience's point of view?

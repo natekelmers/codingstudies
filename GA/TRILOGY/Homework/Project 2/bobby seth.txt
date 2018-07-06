@@ -1,0 +1,8 @@
+- "democratic republilc of north korea"
+
+- pulled tweets related to north korea hashtags, examined the most meaningful hashtags in a sqlite database, 
+
+- examined sentiment, volume of tweets, for before/during/after major events (such as cancelling summit)
+- looked at financial data for various stocks (close/high/low) before, during, after events (like the summit)
+
+- really great visualizations, code looks pretty solid, i would give this a good grade

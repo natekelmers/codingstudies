@@ -1,0 +1,4 @@
+Wisdom...
+
+- which error you build into your linear regression (exponential error, abs value error, sum of squared error, etc) depends partly on your model but also on your use case
+- how "costly" is an outlier?

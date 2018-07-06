@@ -1,0 +1,27 @@
+Regina and Pat Halligan from Lyft...
+
+- Pat Halligan, works on operations and maangement side, started in baltimore as an operations lead, helps with rental program...
+- Reg, mid-atlantic analyst, focus changes frequently (business needs shift frequently)
+
+Reg:
+
+- works mostly in sql, tableau (and looker)
+- uses lots of zip, lat/long data
+- generally fulfills a lot of data requests, also focuses a lot on demand forecasting, passenger/ridership, works a lot with finance analysts to determine budget vs demand
+- working on a deep dive to determine how rideshare companies process pools
+- tips: know audience and what decisions they need to make; deep dive would mean knowing pat's bottlenecks, so can skip some context with him, BUT, maybe including more visualizations for someone more removed (a general manager)
+- tips: ask more questions than you think when you get a data requests (knowing their specific reason for wanting something will help knowing what context to add to answer the question, or even prioritize against something else)
+
+Notes:
+
+- software engineers generally are only in the engineering hubs (seattle, california, etc)
+- locally, you will mostly find data people
+- btw, the local support role is extremely in demand in pool/app companies in general
+
+- if you want to move somewhere and work in a competitive tech environment (like for a start-up), make it part of your morning routine (often, weekly-plus?) to check out what companies are in that city and what skills can get you there (look in the actual skills section also, the title can be ambiguous)
+
+- today's buzzword is be ethical/compliant/etc with data privacy or proper data usage (drop a nugget that you scrub personal data!)
+
+- Hive and Presto are new database tools, Hive is better for large databases, Presto is better for querying granular cases
+
+- Talk to Pat about jobs with Lyft, tech meetups

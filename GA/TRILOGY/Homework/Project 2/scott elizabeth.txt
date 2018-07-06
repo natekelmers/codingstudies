@@ -1,0 +1,8 @@
+- west nile virus
+- project tycho and usgeojson data
+
+- cleanded data, uploaded to sqlite, queried using flask and turned it into jsons, combined the files with standard geojson files
+
+- used d3 to visualize
+
+- 

@@ -1,0 +1,8 @@
+- dashboard about the dc area
+- used leaflet and d3 to render geojson data for subdivisions
+- maps are responsive to clicks, graphs rendered in d3
+- web pages for "dc map" "city teams", "night bars", "crimes", "rate us", "scores"
+- tweets scraped mentioning various famous bars in the dc area
+- map showing dc alcohol vendors (bars and abs stores)
+- integrated shot-spotter data to map gunshots throughout the city
+- mongodb to store database data, jquery, flask

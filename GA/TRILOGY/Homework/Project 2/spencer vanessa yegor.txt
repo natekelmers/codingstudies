@@ -1,0 +1,12 @@
+- explore why media sites are becoming so polarized...
+- examined 20 news sites (left and right leaning)
+- used python and beautiful soup to scrape websites, stored websites in mongodb, scraped 100k documents, converted html to text using nlp techniques, visualized in a word-cloud, plotly, and a core diagram (zanecharts), used flask and json objects
+
+- word cloud showed that right-leaning news sites appear to be more focused one topic, left-leaning news sites appear to talk about bigger picture, total word cloud appears to be more similar to right-leaning cloud
+- left-leaning sites have longer articles and appear to be more informative
+- appear to be actual echo chambers in terms of what sites are linking to what
+- right is "louder"
+
+- takeaway: right, which has shorter, hyper-focused and partisan articles, dominates the internet space over the left, which has longer, more factual and logical articles
+
+- next steps: paste article into the puddlenet and determine if the article is "left" or "right"

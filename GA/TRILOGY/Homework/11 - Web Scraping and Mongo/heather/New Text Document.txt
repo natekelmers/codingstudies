@@ -1,0 +1,3 @@
+Heather, good work throughout most of part 1. I did notice that your code got errors when building the dictionaries of hemispheres, but the code looks like it might have worked, and you just ran the code without initializing the browser.
+
+Your grade is where it is in part because I don't see part 2 of the assignment in your repo. Feel free to resubmit this.

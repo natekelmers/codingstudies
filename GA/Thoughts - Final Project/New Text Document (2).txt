@@ -1,0 +1,13 @@
+TENSORFLOW
+
+What is a tensor?
+
+- an n-dimensional matrix (measured in ranks and shapes)
+
+- for example...
+- [3] = rank 0
+- [1., 2., 3.] = rank 1, shape [3]
+- [[1., 2., 3.], [4., 5., 6.]] = rank 2, shape [2, 3]
+
+- your tensor board shows you what kinda learning your machine is doing
+
